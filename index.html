@@ -1,0 +1,116 @@
+<!DOCTYPE html><html><head><title></title><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /><style type='text/css'>
+body {
+  background:#000;
+  color:#fff;
+  font-family:'Georgia';
+  -webkit-transform:rotate(4deg) scale(0.9);
+ }
+@-webkit-keyframes blinker {  
+  from { opacity: 1.0; }
+  to { opacity: 0.0; }
+}
+em {
+  -webkit-animation-name: blinker;  
+  -webkit-animation-iteration-count: infinite;  
+  -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+  -webkit-animation-duration: 800ms; 
+}
+.dark{
+    color:#0054A2;
+    -webkit-transform:rotate(4deg) scale(0.9);	
+}
+.dust{
+	color:#F84434;
+}
+strong {
+  font-weight:normal;
+  color:#FFF707;
+}
+
+a {
+  color:#FFF707;
+  text-decoration:none;
+}
+</style><script type='text/javascript'>
+window.onload = function() {
+    var s = document.getElementsByTagName('div'), cur = 0;
+    if (!s) return;
+    function go(n) {
+        cur = n;
+        var i = 1e3, e = s[n];
+        for (var k = 0; k < s.length; k++) s[k].style.display = 'none';
+        e.style.display = 'inline';
+        e.style.fontSize = i + 'px';
+        if (e.firstChild.nodeName === 'IMG') {
+            document.body.style.backgroundImage = 'url(' + e.firstChild.src + ')';
+            e.firstChild.style.display = 'none';
+        } else {
+            document.body.style.backgroundImage = '';
+            document.body.style.backgroundColor = e.style.backgroundColor;
+        }
+        while (
+            e.offsetWidth > window.innerWidth ||
+            e.offsetHeight > window.innerHeight) {
+            e.style.fontSize = (i -= 10) + 'px';
+            if (i < 0) break;
+        }
+        e.style.marginTop = ((window.innerHeight - e.offsetHeight) / 2) + 'px';
+        if (window.location.hash !== n) window.location.hash = n;
+        document.title = e.textContent || e.innerText;
+    }
+    document.onclick = function() {
+        go(++cur % (s.length));
+    };
+    document.onkeydown = function(e) {
+        (e.which === 39) && go(Math.min(s.length - 1, ++cur));
+        (e.which === 37) && go(Math.max(0, --cur));
+    };
+    function parse_hash() {
+        return Math.max(Math.min(
+            s.length - 1,
+            parseInt(window.location.hash.substring(1), 10)), 0);
+    }
+    if (window.location.hash) cur = parse_hash() || cur;
+    window.onhashchange = function() {
+        var c = parse_hash();
+        if (c !== cur) go(c);
+    };
+
+    go(cur);
+};
+</script></head><body>
+	
+	<div><img src='https://lh3.ggpht.com/_p2ZBNGf_7w8/TTNCJN7YeKI/AAAAAAAAFRA/wWMiS0a_llc/s1600/cyberspace.jpg'/>Internet<em>&Identity</em><audio autoplay="autoplay"><source src="http://f.cl.ly/items/0c2R2p1U1h0C0q2i2K2Z/08%20Irene.mp3" type="audio/mp3"></div>
+<div>are becoming increasingly tied</div>
+<div class='dark'><img src="https://farm5.staticflickr.com/4008/4188088640_536801788d.jpg"/>both embody networks that stretch beyond the nation-state</div>
+<div class='dark'>but it wasn't always this way</div>
+<div>“print capitalism” formed “...the embryo of nationally imagined community”<br> - Benedict Anderson</div>
+<div><em>Mass Media</em>: marginalizes, captivates and channels</div>
+<div>I argue that the <font style='color:#25B411;'>unidirectional nature</font> of these previous broadcasting systems(regimes)</div>
+<div> furthers the state’s ability <font style='color:#DA8325;'>to police, regulate and make legible</font> a population saturated with diversity</div>
+<div class='dust'><img src='http://f.cl.ly/items/0H3g0k3M1i2d3J3a3k2B/networks-cambodia2.png'/>what makes the internet so different?</div>
+<div>unique network structure of the internet</div>
+<div>distributive, open, collaborative systems, like blogs, wikis, and file-sharing, which converge around issues such as globalization and freedom of communication</div>
+<div>ethnic minorities and diasporic communities are now <em>online</em></div>
+<div class='dark'>creating counter discourses, challenging these media regimes</div>
+<div>and the traditional <font style='color:#25B411;'>territorial aspirations</font> that have defined diasporas until now</div>
+<div>Do virtual communities reflect a <font style='color:#25B411;'>pure east(traditions intact)</font>, <font style='color:#DA8325;'>pure west(assimilation)</font>, or hybridity of the two?</div>
+<div><img src='http://f.cl.ly/items/2L0V3T3v3w0V0P0l0d0j/skitched-20121129-120140.jpg'/></div>
+<div><img src='http://f.cl.ly/items/2V1G2V001816101S1U35/Screen%20Shot%202012-11-29%20at%2012.05.25%20PM.png'/></div>
+<div>Nicholas Tapp argues against the underlying assumptions of <font style='color:#25B411;'>hybri</font><font style='color:#DA8325;'>dity</font>, which he believes reasserts<font style='font-style:italic;'>"the fixity of a pure cultural centre"</font></div>
+<div>The Hmong & <br>‘Nostalgia-Desire’</div>
+<div><font style='font-style:italic;'>"...like adopted kid wanted to know who their real parents are, hmong long for their parents/origin."</font><br>-slude</div>
+<div>How does this manifest?</div>
+<div>pnyaj:<br><font style='font-style:italic;'>"If someone would to ask me “What is Hmong?” I can tell them what are Hmong and the background and history. But if the question “Who is the Hmong?” I can say my mom, dad, sisters, brothers, and anyone that is related to me."</font></div>
+<div>Maintainance of <font style='color:#25B411;'>kinship relations</font> that are globally dispersed through the internet</div>
+<div>young Australian Hmong find partners of different clans through instant messaging, chatrooms, fourms and email</div>
+<div>rather than customary New Years Eve visits to other Hmong communities to find partners outsides one's own village.<img src='http://www.chiangmai-mail.com/257/pictures/n12-Hmong-new-year-2.jpg'/></div>
+<div>What is the state's response?</div>
+<div><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Map_of_Singapore.jpg/220px-Map_of_Singapore.jpg'/><font style='color:#000'>The reach of the nation-state doesn’t end with its own borders.</font></div>
+<div>The state<font style='font-style:italic;'>“continues to define, discipline, control and regulate all kinds of populations”</font> via global economic, power relations (Ong 1999).</div>
+<div>Laos and Vietnam have tightened restrictions on internet access and content</div>
+<div>"Vietnam's firewall denies access to thousands of websites that government censors consider objectionable, with a special emphasis on blocking democracy-related content" <br>- Asia Times 2006</div>
+<div>If the regime’s resources dedicated to the repression of the small number of digital dissenters is any indication of their perceived threat, and jointly their influence...</div>
+<div>the internet can confidently be seen as a platform instrumental in shifting deeply entrenched power structures.</div>
+<div>International community and the <em>Future</em></div>
+<div class='dark'><img src='http://f.cl.ly/items/2N0F3P0X3w3C0r2g1C1K/anonymouslogoPost-339x336.jpg'/>Questions<br>Music: Irene-Caribou</div>
